@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run on PC",
+            "type": "shell",
+            "command": ".venv\\Scripts\\activate && cmd /c \"flet run main.py -r --ignore-dirs .venv,.flet,.vscode,__pycache__,assets,db,build\"",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "Run on IOS",
+            "type": "shell",
+            "command": ".venv\\Scripts\\activate && cmd /c \"flet run main.py -r --ios --ignore-dirs .venv,.flet,.vscode,__pycache__,assets,db,build\"",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "Run on Android",
+            "type": "shell",
+            "command": ".venv\\Scripts\\activate && cmd /c \"flet run main.py --android --ignore-dirs .venv,.flet,.vscode,__pycache__,assets,db,build\"",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true
+            }
+        }
+    ]
+}

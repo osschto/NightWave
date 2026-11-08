@@ -1,0 +1,7 @@
+flet==1.0.5
+flet-audio==1.0.5
+fastapi==0.116.0
+SQLAlchemy==2.1.6
+uvicorn==0.54.0
+cookiecutter==2.7.1
+python-dotenv==1.2.4
