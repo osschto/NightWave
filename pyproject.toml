@@ -1,0 +1,48 @@
+[project]
+name = "NightWave"
+version = "0.0.1"
+description = "NightWave is an atmospheric audio platform designed for evening relaxation, featuring a curated collection of podcasts and audiobooks with intuitive search and a personal favorites library"
+authors = [
+  {name = "osschto", email = "[osschto@gmail.com]"}
+]
+dependencies = [
+    "flet==1.0.5",
+    "flet-audio==1.0.5",
+    "flet-platform-assets==1.0.5",
+
+    "anyio==4.15.1",
+    "h11==0.16.0",
+    "httpcore==1.0.9",
+    "httpx==0.28.1",
+    "websockets==17.3",
+
+    "packaging==26.3",
+    "typing_extensions==4.16.0",
+    "annotated-types==0.8.0",
+
+    "Jinja2==3.1.6",
+    "MarkupSafe==3.0.3",
+
+    "SQLAlchemy==2.1.6",
+
+    "python-dotenv==1.2.4"
+]
+
+[tool.flet.app]
+include = [".env"]
+exclude = [
+    "assets/examples",
+    "assets/colors",
+    "requirements.txt",
+    "README.md",
+    ".env.example"
+]
+
+[tool.flet.android]
+adaptive_icon_background = "#070B19"
+
+[tool.flet.splash]
+color = "#070B19"
+dark_color = "#070B19"
+android_gravity = "center"
+hide_animation = true
